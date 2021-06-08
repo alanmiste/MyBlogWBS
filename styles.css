@@ -13,7 +13,8 @@ body {
     background-color: #101c28;
   }
   
-  header nav {
+  nav {
+    background-color: #101c28;
     display: flex;
     list-style: none;
     padding: 15px;
@@ -22,7 +23,7 @@ body {
     flex-flow: column;
   }
   
-  header nav a {
+  nav a {
     color: #faebd1;
     font-size: 25px;
     padding: 15px;
@@ -31,10 +32,10 @@ body {
     position: relative;
   }
   
-  header nav a:hover {
+  nav a:hover {
     color: #ff7c1d !important;
   }
-  header nav a:after {
+  nav a:after {
     height: 3px;
     width: 0px;
     background-color: #ff7c1d;
@@ -45,7 +46,7 @@ body {
     transition: width 0.3s ease;
   }
   
-  header nav a:hover:after {
+  nav a:hover:after {
     width: 100%;
   }
   
@@ -54,7 +55,7 @@ body {
     margin-right: 15px;
   }
   
-  aside {
+  aside{
     border-width: 5px;
     width: 150px;
     float: left;
@@ -66,6 +67,16 @@ body {
   li {
     padding: 10px;
     margin: 5px;
+  }
+  aside ul li a{
+    color: #faebd1;
+    text-decoration: none;
+    transition: color 0.5s ease;
+    position: relative;
+  }
+
+  aside ul li a:hover{
+    color: #ff7c1d;
   }
   
   h1 {
@@ -85,6 +96,11 @@ body {
   
   label {
     color: #f6fad1;
+  }
+
+  div img {
+    padding: 15px;
+    padding-block-start: 15px;
   }
   
   input,
